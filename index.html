@@ -1,11 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Float On</title>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/user-temp-assets/float-on-logo/main/floaton_transparent_logo.png" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(-45deg, #F1FAEE, #D8F3DC, #E5F9F6, #BDE0FE);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+      color: #144552;
+      text-align: center;
+      padding: 3rem 1rem;
+      overflow-x: hidden;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.6rem;
+      animation: float 3s ease-in-out infinite;
+      transform-style: preserve-3d;
+      transition: transform 0.3s ease;
+    }
+
+    header:hover {
+      transform: rotateX(5deg) rotateY(5deg) scale(1.03);
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    p.tagline {
+      font-size: 1.3rem;
+      color: #457B9D;
+      margin-bottom: 2rem;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #84DCCF, #A0C4FF);
+      color: #144552;
+      padding: 1rem 2.2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .cta:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .mission {
+      margin: 2rem auto;
+      max-width: 600px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #144552;
+    }
+
+    .features {
+      max-width: 600px;
+      margin: 3rem auto 0;
+      text-align: left;
+    }
+
+    .features h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .features ul {
+      padding-left: 1.5rem;
+    }
+
+    .features li {
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #8D99AE;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <span style="font-size: 2.5rem;">👓</span> Float On Games
     <span style="font-size: 2.5rem;">👓</span> Float On
   </header>
 
-  <section class="mission" style="margin: 1.5rem auto; max-width: 600px; font-size: 1.1rem; line-height: 1.6; color: #144552;">
+  <section class="mission">
     <p><strong>Our Mission:</strong> Float On creates mindful, ambient AR experiences that blend seamlessly into daily life. Our mission is to help people reset, reflect, and reconnect through calming audio-first games that encourage wellness, presence, and emotional clarity. With adaptive AI, minimal UI, and optional community features, Float On transforms everyday moments into restorative rituals.</p>
   </section>
 
@@ -27,8 +135,7 @@
   </section>
 
   <footer>
-    Powered by Gemini AI, Android XR & Eclipsa Audio – © 2025 Float On Games
+    &copy; 2025 Float On. All rights reserved.
   </footer>
 </body>
 </html>
-
