@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float On Games</title>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/user-temp-assets/float-on-logo/main/floaton_transparent_logo.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(to bottom right, #F1FAEE, #E5F9F6);
+      color: #144552;
+      text-align: center;
+      padding: 3rem 1rem;
+      overflow-x: hidden;
+    }
+
+    header {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    p.tagline {
+      font-size: 1.3rem;
+      color: #457B9D;
+      margin-bottom: 2rem;
+    }
+
+    .cta {
+      background-color: #52B788;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .cta:hover {
+      background-color: #40916C;
+      transform: scale(1.05);
+    }
+
+    .features {
+      max-width: 600px;
+      margin: 3rem auto 0;
+      text-align: left;
+    }
+
+    .features h2 {
+      font-size: 1.7rem;
+      margin-bottom: 1rem;
+    }
+
+    .features ul {
+      padding-left: 1.5rem;
+    }
+
+    .features li {
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #8D99AE;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span style="font-size: 2.5rem;">👓</span> Float On Games
+  </header>
+
+  <p class="tagline">Calming, AI-powered AR games with Gemini, Android XR & Eclipsa Audio ✨</p>
+  <button class="cta">Join the Beta</button>
+
+  <section class="features">
+    <h2>Our Games</h2>
+    <ul>
+      <li><strong>Float</strong> – Meditative AR journey with sound therapy + ambient AI interactions</li>
+      <li><strong>Lumen Trail</strong> – A walking game that syncs with your sunrise & reflections</li>
+      <li><strong>Drift Bloom</strong> – Grow your own ambient garden with sound & movement</li>
+      <li><strong>Echo Nest</strong> – A cozy cave of AI-evolving soundscapes and textures</li>
+      <li><strong>Cloud Caravan</strong> – Sky drifting through poetic memory realms using gaze + movement</li>
+    </ul>
+    <p style="margin-top: 2rem; font-style: italic; color: #52796F;">
+      Now enhanced with spatial audio powered by Eclipsa Audio Tech 🔊
+    </p>
+  </section>
+
+  <footer>
+    Powered by Gemini AI, Android XR & Eclipsa Audio – © 2025 Float On Games
+  </footer>
+</body>
+</html>
